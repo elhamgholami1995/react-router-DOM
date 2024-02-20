@@ -8,7 +8,7 @@ import AppNav from "./components/AppNav";
 function App() {
   return (
     <div>
-      <AppNav/>
+      <AppNav />
 
       <Routes>
         <Route path="/" element={<Home />} />

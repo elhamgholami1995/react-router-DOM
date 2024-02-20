@@ -1,15 +1,17 @@
+import { Link, NavLink } from "react-router-dom";
+
 function AppNav() {
   return (
     <nav>
       <ul>
         <li>
-          <a href="/">Home</a>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <a href="/posts">posts</a>
+          <NavLink to="/posts">posts</NavLink>
         </li>
         <li>
-          <a href="/dashboard">dashboard</a>
+          <NavLink to="/dashboard">dashboard</NavLink>
         </li>
       </ul>
     </nav>
