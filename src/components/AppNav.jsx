@@ -5,13 +5,15 @@ function AppNav() {
     <nav>
       <ul>
         <li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink end to="/">
+            Home
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/posts">posts</NavLink>
+          <NavLink to="posts">posts</NavLink>
         </li>
         <li>
-          <NavLink to="/dashboard">dashboard</NavLink>
+          <NavLink to="dashboard">dashboard</NavLink>
         </li>
       </ul>
     </nav>
