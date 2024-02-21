@@ -5,15 +5,21 @@ import Posts from "./pages/posts";
 import Dashboard from "./pages/dashboard";
 import AppNav from "./components/AppNav";
 import Layout from "./components/Layout";
+import Profile from "./components/Profile";
+import Payment from "./components/Payment";
 
 function App() {
   return (
     <div>
       <Routes>
-        <Route element={<Layout />}>
-          <Route index path="/" element={<Home />} />
-          <Route path="/posts" element={<Posts />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/app" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="posts" element={<Posts />} />
+          <Route path="dashboard" element={<Dashboard />}>
+            <Route index element={<Profile />} />
+            <Route path="profile" element={<Profile />} />
+            <Route path="payment" element={<Payment />} />
+          </Route>
         </Route>
       </Routes>
     </div>

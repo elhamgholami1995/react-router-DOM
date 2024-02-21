@@ -5,7 +5,7 @@ function AppNav() {
     <nav>
       <ul>
         <li>
-          <NavLink end to="/">
+          <NavLink end to="/app">
             Home
           </NavLink>
         </li>
