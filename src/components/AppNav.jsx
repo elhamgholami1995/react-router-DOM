@@ -10,6 +10,11 @@ function AppNav() {
           </NavLink>
         </li>
         <li>
+          <NavLink end to="Login">
+            Login
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="posts">posts</NavLink>
         </li>
         <li>

@@ -8,6 +8,7 @@ import Layout from "./components/Layout";
 import Profile from "./components/Profile";
 import Payment from "./components/Payment";
 import Post from "./components/post";
+import Login from "./components/Login";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/app" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="login" element={<Login />} />
           <Route path="posts/:id" element={<Post />} />
           <Route path="posts" element={<Posts />} />
           <Route path="dashboard" element={<Dashboard />}>
