@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/home";
 import Posts from "./pages/posts";
@@ -20,7 +20,7 @@ function App() {
           <Route path="posts/:id" element={<Post />} />
           <Route path="posts" element={<Posts />} />
           <Route path="dashboard" element={<Dashboard />}>
-            <Route index element={<Profile />} />
+            <Route index element={<Navigate to="profile" />} />
             <Route path="profile" element={<Profile />} />
             <Route path="payment" element={<Payment />} />
           </Route>
